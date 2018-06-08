@@ -1,0 +1,122 @@
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" type="text/css" href="MyStyle.css">
+		<br>
+		<tittle align = "middle"><h1><u>FEEDBACK FORM</u></h1></tittle>
+		
+	</HEAD>
+	<BODY >
+		<script type="text/javascript">
+			function check()
+			{
+				var str = document.getElementById('psw').value;
+				var usn = document.getElementById('usn').value;
+				var nat = document.getElementById('nat').value;
+    			if (str.length < 6) 
+    			{
+       				alert("password too short");
+		        	document.location.reload();
+    			} 
+    			else if (str.length > 50) 
+    			{
+			        alert("password too long");
+    				document.location.reload();
+			    } 
+			    else if (str.search(/\d/) == -1) 
+			    {
+    			    alert("password must contain a number");
+	        		document.location.reload();
+			    } 
+			    else if (str.search(/[a-zA-Z]/) == -1) 
+			    {
+			        alert("password must contain a letter");
+        			document.location.reload();
+ 			    } 
+    			else if(usn == "")
+    			{
+			        alert("Username is compulsary");
+        			document.location.reload();
+    			}
+    			else if(nat == "")
+    			{
+			        alert("Nationality is compulsary");
+        			document.location.reload();
+    			}
+    			else
+   			 	{
+    				alert("All Set")
+    				document.foo.submit()
+    			}
+
+
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="MyStyle.css">
+		<br>
+		<table align = "center" border = "5" bgcolor = "ffffe0"  bordercolor = "ffa07a" >
+			<tr>
+				<td>
+					<p> 
+						<div class ="a" >
+							<font class= "ast">
+								*
+							</font>
+							indicates the field is required
+						</div>
+						<br><br>
+						
+						<div class = "b">
+						<font font-family = "Arial" size = "5" align = "left">
+
+							<form name = "foo" action="thanks.html">
+								
+								<fieldset>
+									<legend> General Information </legend>
+
+									<font class= "ast">
+									*
+									</font>
+									
+									UserName : <input type = "text" id = "usn"><br>
+								
+									<font class= "ast">
+									*
+									
+									</font>
+									
+									Password : <input type="password" name="psw" id = "psw"><br>
+									
+									<font class= "ast">
+									*
+									</font>
+								
+									Nationality : <input type = "text" id = "nat"><br><br>
+
+									Email-Id : <input type = "text"><br>
+
+
+
+									
+
+								</fieldset>
+
+								<fieldset>
+									<legend>FeedBack</legend>
+								
+									 <br>
+									<textarea rows="10">Enter here...</textarea><br><br>	
+									
+								</fieldset>	
+								<input type="reset" value = "Reset">
+								<input type="button" value="Submit" onclick="check()">
+
+							</form>
+						</font>
+						</div>
+					</p>
+				</td>
+			</tr> 
+			
+		</table>		
+	</BODY>
+</HTML>

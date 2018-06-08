@@ -1,0 +1,87 @@
+input[type=text]
+{
+	width: 45%;
+	padding: 5px;
+	margin : 9px;
+	display: inline-block;
+	border: 1px dotted;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=password]
+{
+	width: 45%;
+	padding: 5px;
+	margin : 9px;
+	display: inline-block;
+	border: 1px dotted;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type= button] , input[type = reset]
+{
+	width:25%;
+	height: 10%;
+	padding : 12px ;
+	margin : 9px;
+	border : solid;
+	border-width: 2px
+}
+
+input[type= button]:hover
+{
+	background-color: blue;
+	color: white;
+}
+
+ input[type = reset]:hover
+{
+	background-color: blue;
+	color: white;
+}
+
+p
+{ 
+	width : 600;align : left
+}
+
+body
+{
+	background-image: url(Light-Gold-Background-01.jpg) ; background-size: 100% 100%
+}
+
+textarea
+{
+	width: 300px
+}
+
+table
+{ 
+	height :800 ;
+	width : 800 ;
+}
+
+div.a
+{
+	margin-left: 25px;
+	font-size: 20;
+}
+
+div.b
+{
+	margin-left: 25px;
+	font-size: 25;
+}
+
+.ast
+{
+	color : red;
+	size:5px
+}
+
+textarea
+{
+	width: 400px
+}
