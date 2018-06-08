@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tittle> <h1>GRADES</h1></tittle>
+	<BR><BR><BR>
+	<style type="text/css">
+		input[type= "button"]
+		{
+			text-align: center;
+			border :3px solid;
+			border-color: red;
+			font-size: 20px;
+			height: 10%;
+			width :10%;
+		}
+
+		input[type= "button"]:hover
+		{
+			background-color: white;
+			border-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function enter()
+		{
+			var g = prompt('enter the grade (A-E)')
+			document.write(g + " is ")
+			switch(g)
+			{
+				case 'A' : document.write("Distinction");
+							break;
+				case 'a' : document.write("Distinction");
+							break;
+				case 'B' : document.write("Excellent");
+							break;
+				case 'b' : document.write("Excellent");
+							break;
+				case 'C' : document.write("Very Good");
+							break;
+				case 'c' : document.write("Very Good");
+							break;
+				case 'D' : document.write("Good");
+							break;
+				case 'd' : document.write("Good");
+							break;			
+				case 'E' : document.write("Fail");
+							break;
+				case 'e' : document.write("Fail");
+							break;
+				default :
+						{
+							alert("wrong input")
+							enter();
+							break;
+						}
+
+			}
+		}
+	</script>
+	<input type="button" name="entval" value="Enter Grade" onClick= "enter()">
+</body>
+</html>

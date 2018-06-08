@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	input[type=text]
+		{
+			width: 75%;
+			padding: 5px;
+			margin : 9px;
+			display: inline-block;
+			border: 1px solid;
+			border-radius: 4px;
+			box-sizing: border-box;
+			
+		}
+
+		input[type= submit] , input[type = reset]
+		{
+			background-color: white;
+			width:25%;
+			height: 10%;
+			padding : 12px ;
+			margin : 9px;
+			border : solid;	
+			border-width: 2px;
+			border-radius: 4px;
+		}
+
+		input[type= button]:hover
+		{
+			background-color: blue;
+			color: white;
+		}
+
+		input[type = reset]:hover
+		{
+			background-color: blue;
+			color: white;
+		}
+
+		input.a[type= "button"]
+		{
+			background-color: white;
+			text-align: center;
+			border :2px solid;
+			border-radius: 4px;
+			font-size: 20px;
+			height: 10%;
+			width :10%;
+			visibility: hidden;
+		}
+		input.b[type= "button"]
+		{
+			background-color: white;
+			width:25%;
+			height: 10%;
+			padding : 12px ;
+			margin : 9px;
+			border : solid;	
+			border-width: 2px;
+			border-radius: 4px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="cs1.js">
+
+	</script>
+	<form name = "foo">
+	<fieldset>
+			<legend><big>GENERAL DETAILS</big></legend>
+			Employee Name<br><input type="text" id ="name"><br>
+			Age <br> <input type="text" id="age"><br>
+			Salary <br> <input type="text" id="sal"><br>
+			Designation <br><input type="text" id="des"><br><br>
+
+			<input type="reset" id="Reset">
+			<input class ="b" type="button" id="Submit" value = "Submit" onclick="checkcomp()">
+		</fieldset>
+		<br>
+
+	<fieldset name = "conf">
+		name:<p><span id = "disname"> </span></p>
+		age:<p><span id = "disage"> </span></p>
+		salary:<p><span id = "dissal"> </span></p>
+		designation<p><span id = "disdes"> </span></p>
+
+		<input class ="a" type="button" id="conf" value="CONFIRM" onclick="store()">
+		<input class ="a" type="button" id="canc" value="CANCEL" onclick="rel()">
+	</fieldset>
+</form>
+</body>
+</html>

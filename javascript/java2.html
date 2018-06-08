@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tittle> <h1>FINDING MAXIMUM OF 8 ELEMENTS</h1></tittle>
+	<BR><BR><BR>
+	<style type="text/css">
+		input[type= "button"]
+		{
+			text-align: center;
+			border :3px solid;
+			border-color: red;
+			font-size: 20px;
+			height: 10%;
+			width :10%;
+		}
+
+		input[type= "button"]:hover
+		{
+			background-color: white;
+			border-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr = [];
+		var j =0;
+		function enter()
+		{
+			document.write("the numbers are <br>")
+			for(var i = 0; i<8 ; i++)
+			{
+				arr[i] = prompt('Enter element' +" "+ (i+1))
+				if(isNaN(arr[i]))
+				{
+					alert("it's not a number")
+					i--;
+				}
+				document.write(arr[i] +" ")
+
+			}
+			for(j = 0, k =1 ; k<8 ; k++)
+			{
+				if(arr[j] < arr[k])
+					j=k;
+			}
+
+			document.write(" <br> <br> MAXIMUM IS " +"<br><br>" + arr[j])
+
+		}
+	</script>
+	<input type="button" name="entval" value="Enter Values" onClick= "enter()">
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<tittle><b><u><i><H1>CALCULATE YOUR MARKS PERCENTAGE</H1></i></u></b></tittle>
+	<style type="text/css">
+		input[type= "number"]
+		{
+			width :202px;
+			border:1px dotted;
+		}
+
+		input[type= "button"]
+		{
+			text-align: center;
+			border :3px solid;
+			border-color: red;
+			font-size: 20px;
+			height: 10%;
+			width :10%;
+		}
+
+		input[type= "button"]:hover
+		{
+			background-color: white;
+			border-color: blue;
+		}
+		fieldset
+		{
+			width : 1380px;
+			border :2px solid;
+			border-radius: 4px;
+			height: 80px;
+		}
+
+		input[type= "number"]:hover 
+		{
+			border-color: red;
+		}
+		input[type=text]
+		{
+			width: 10%;
+			padding: 5px;
+			margin : 9px;
+			display: inline-block;
+			border: 1px solid;
+			border-radius: 4px;
+			box-sizing: border-box;
+			
+		}
+
+		pre
+		{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	
+	<script>
+			function calculate()
+			{
+				var s1 = f.eng.value;
+				var s2 = f.math.value;
+				
+				var s3 = f.phy.value;
+				var s4 = f.chem.value;
+				var s5 = f.comp.value;
+				var result = parseInt(s1)+parseInt(s2)+parseInt(s3)+parseInt(s4)+parseInt(s5);
+				f.total.value= result;
+				f.percentage.value= result *100 /500 
+				
+			}
+
+			function checkeng()
+			{
+				if ((parseInt(f.eng.value) > 100) || (parseInt(f.eng.value)<0))
+					alert("please enter marks within range 0 to 100")
+				else if(isNaN(parseInt(f.eng.value)))
+					alert("please enter a number")
+			}
+			function checkmath()
+			{
+				if ((parseInt(f.math.value) > 100) || (parseInt(f.math.value)<0))
+					alert("please enter marks within range 0 to 100")
+				else if(isNaN(parseInt(f.math.value)))
+					alert("please enter a number")
+			}
+			function checkphy()
+			{
+				if ((parseInt(f.phy.value) > 100) || (parseInt(f.phy.value)<0))
+					alert("please enter marks within range 0 to 100")
+				else if(isNaN(parseInt(f.phy.value)))
+					alert("please enter a number")
+			}
+			function checkchem()
+			{
+				if ((parseInt(f.chem.value) > 100) || (parseInt(f.chem.value)<0))
+					alert("please enter marks within range 0 to 100")
+				else if(isNaN(parseInt(f.chem.value)))
+					alert("please enter a number")
+			}
+			function checkcomp()
+			{
+				if ((parseInt(f.comp.value) > 100) || (parseInt(f.comp.value)<0))
+					alert("please enter marks within range 0 to 100")
+				else if(isNaN(parseInt(f.comp.value)))
+					alert("please enter a number")
+			}
+	</script>
+
+	<br>
+	<br>
+
+	<h2><pre>    Please enter you marks.</pre></h2>
+	<form name = "f">
+	<fieldset border = "5">
+		<legend><big>SUBJECT MARKS (out of 100) </big></legend>
+		<br>
+		English <input  type="number" maxlength = "3" size = "2" min ="0" max = "100" name ="eng" oninput="checkeng()">
+		Mathematics <input  type="number" min ="0" max = "100" name="math" oninput="checkmath()">
+		Physics <input  type="number" min ="0" max = "100" name="phy" oninput="checkphy()">
+		Chemistry <input   type="number" min ="0" max = "100" name="chem" oninput="checkchem()">
+		Computer <input  type="number" min ="0" max = "100" name="comp" oninput="checkcomp()"><br><br>
+	</fieldset>
+	<br><br>
+	<div align="center">
+		<input type="button" name="CALCULATE" value="CALCULATE" onclick="calculate()">
+ 	</div>
+ 	 <br><br>
+	<div align = "center">
+		<h3>Total	<input type="text" name="total" id = "total" disabled="disabled"> /500</h3><br><br>
+		<h3>Percentage	<input  type="text" name="percentage" disabled="disabled"> % </h3> <br><br> 
+	</div>
+	</form>
+
+</body>
+</html>
