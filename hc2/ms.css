@@ -1,0 +1,57 @@
+body
+{
+	height : 100%;
+	background-image: url(33823413-abstract-beige-background-tan-or-light-brown-background-plain-simple-solid-gold-color-and-vintage-gr.jpg);
+	background-repeat: no-repeat fixed ;
+	background-size: cover;
+}
+
+img
+{
+	
+}
+
+div.a
+{
+	text-align: center;
+	font-size: 18px;
+}
+
+div.b
+{
+	font-size: 20px
+}
+
+input[type=text] , input[type = email]
+{
+	width :90%;
+	padding: 5px 8px;
+	margin :9px;
+	display: inline-block;
+	border:2px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type= button] , input[type = reset]
+{
+	background-color: white;
+	width:25%;
+	height: 10%;
+	padding : 12px ;
+	margin : 9px;
+	border : solid;
+	border-width: 2px
+}
+
+input[type= button]:hover
+{
+	background-color: blue;
+	color: white;
+}
+
+ input[type = reset]:hover
+{
+	background-color: blue;
+	color: white;
+}

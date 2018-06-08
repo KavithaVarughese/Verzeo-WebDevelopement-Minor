@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+			function check()
+			{
+				var name = document.getElementById('name').value;
+				var num = document.getElementById('num').value;
+				
+    			if (num.length !=10) 
+    			{
+       				alert("phone number should have 10 digits");
+		        	document.location.reload();
+    			}  
+			    else if (isNaN(parseInt(document.getElementById('num').value))) 
+			    {
+    			    alert("phone number must not contain letters");
+	        		document.location.reload();
+			    } 
+    			else if(name == "")
+    			{
+			        alert("Please enter your name");
+        			document.location.reload();
+    			}
+    			else
+   			 	{
+    				alert("All Set")
+    				document.foo.submit()
+    			}
+
+
+			}
+		</script>
+	
+	<link rel="stylesheet" type="text/css" href="ms.css">
+	<img src="m&m.jpg" height = "600" width = "1425">
+	<div class = "a"><b>
+		Mirchi and Mime is a local restaurant located in Powai, Mumbai, in the Indian state of Maharashtra.<br> Its staff chiefly consists of people with hearing and speech disability.<br> Most of the activities are undertaken by the staff who communicate with the patrons through sign language, images of whose variations accompany every item in the food menu.
+	</b></div>
+	<hr>
+
+	<form action ="thanks2.html">
+	<div align = "center">
+
+		<h1><U><I>FEEDBACK</I></U></h1>
+	</div>
+
+	<div class = "b">
+		<fieldset>
+			<legend><big>GENERAL DETAILS</big></legend>
+			Customer Name<br><input type="text" name="name" id = "name"><br>
+			Phone Number <br> <input type="text" name="name" id ="num"><br>
+			Email Id <br><input type="email" name="Email"><br>
+		</fieldset>
+		<br>
+	
+		<fieldset>
+			<legend>HOW WE DOING?</legend>
+			Service Quality : 
+			<br>
+			<input type="radio" name="service" value="Excellent"> Excellent
+			<input type="radio" name="service" value="Very Good"> Very Good
+			<input type="radio" name="service" value="Good" checked> Good
+			<input type="radio" name="service" value="Bad">Bad
+			<input type="radio" name="service" value="Very Bad"> Very Bad
+			
+			<br>
+			<br>
+
+			Food Quality : 
+			<br>
+			<input type="radio" name="food" value="Excellent"> Excellent
+			<input type="radio" name="food" value="Very Good"> Very Good
+			<input type="radio" name="food" value="Good" checked=""> Good
+			<input type="radio" name="food" value="Bad">Bad
+			<input type="radio" name="food" value="Very Bad"> Very Bad
+
+			<br>
+			<br>
+			Cleanliness :
+			<br> 
+			<input type="radio" name="clean" value="Excellent"> Excellent
+			<input type="radio" name="clean" value="Very Good"> Very Good
+			<input type="radio" name="clean" value="Good" checked=""> Good
+			<input type="radio" name="clean" value="Bad">Bad
+			<input type="radio" name="clean" value="Very Bad"> Very Bad
+
+			<br>
+			<br>
+			How would you recommend it to others? 
+			<br> 
+			<input type="radio" name="rec" value="Excellent"> Excellent
+			<input type="radio" name="rec" value="Very Good"> Very Good
+			<input type="radio" name="rec" value="Good" checked=""> Good
+			<input type="radio" name="rec" value="Bad">Bad
+			<input type="radio" name="rec" value="Very Bad"> Very Bad
+ 
+		</fieldset>
+			<br>
+		<fieldset>
+			<legend>SUGGESTIONS</legend>
+			<textarea rows = "10" style = "width: 90%"> Enter Here...</textarea> 
+		</fieldset>
+	</div>
+	<br>
+	<input type="reset" name="Reset">
+	<input type="button" name="Submit" value = "Submit" onclick="check()">
+
+	</form>
+
+</body>
+</html>
